@@ -14,9 +14,16 @@ graph.connect('couch', {
 })
 
 graph.set(
-  _id: "/listing/teambuy_28133394",
-  type: "/type/listing",
+  _id: "/card/teambuy"
+  type: "/type/card"
+  fn: "TeamBuy"
+)
+
+graph.set(
+  _id: "/listing/teambuy_28133394"
+  type: "/type/listing"
   item_info: "Textbook Rental"
+  lister: "/card/teambuy"
 )
 
 graph.merge( seed, { dirty: true } )

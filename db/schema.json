@@ -8,10 +8,32 @@
         "unique": false,
         "type": "string",
         "required": true
+      },
+      "lister": {
+        "name": "lister",
+        "unique": false,
+        "type": "/type/card",
+        "required": true
       }
     },
     "indexes": {
-      "key": ["item_info"]
+      "key": ["item_info", "lister"]
+    }
+  },
+  "/type/card": {
+    "_id": "/type/card",
+    "type": "/type/type",
+    "name": "hCard",
+    "properties": {
+      "fn": {
+        "name": "Full Name",
+        "unique": true,
+        "type": "string",
+        "required": true
+      }
+    },
+    "indexes": {
+      "key": ["fn"]
     }
   }
 }
