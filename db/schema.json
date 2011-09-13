@@ -1,7 +1,7 @@
 { "/type/listing": {
     "_id": "/type/listing",
     "type": "/type/type",
-    "name": "Listing",
+    "name": "hListing",
     "properties": {
       "item_info": {
         "name": "Item Info",
