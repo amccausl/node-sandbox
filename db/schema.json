@@ -1,0 +1,17 @@
+{ "/type/listing": {
+    "_id": "/type/listing",
+    "type": "/type/type",
+    "name": "Listing",
+    "properties": {
+      "item_info": {
+        "name": "Item Info",
+        "unique": false,
+        "type": "string",
+        "required": true
+      }
+    },
+    "indexes": {
+      "key": ["item_info"]
+    }
+  }
+}
